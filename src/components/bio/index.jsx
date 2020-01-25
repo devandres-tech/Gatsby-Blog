@@ -9,7 +9,7 @@ export const Bio = () => (
     query={bioQuery}
     render={data => {
       const { author, social, introduction } = data.site.siteMetadata
-
+      console.log("data", data.site)
       return (
         <div className="bio">
           <div className="author">
@@ -35,9 +35,7 @@ export const Bio = () => (
                   {social.medium && (
                     <a href={`https://medium.com/${social.medium}`}>Medium</a>
                   )}
-                  {social.linkedin && (
-                    <a href={`https://www.linkedin.com/${social.linkedin}`}>LinkedIn</a>
-                  )}
+                  <a href={`https://www.linkedin.com/in/andres-io/`}>LinkedIn</a>
                   {social.twitter && (
                     <a href={`https://twitter.com/${social.twitter}`}>
                       Twitter
