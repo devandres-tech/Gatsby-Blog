@@ -44,6 +44,7 @@ export const Bio = () => (
                       Twitter
                     </a>
                   )}
+                  <a href="mailto:andresalcocer7@yahoo.com?Subject=Hello" target="_top">E-Mail</a>
                   {social.facebook && (
                     <a href={`https://www.facebook.com/${social.facebook}`}>
                       Facebook
