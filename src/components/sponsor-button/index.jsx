@@ -4,7 +4,7 @@ import './index.scss'
 
 export const SponsorButton = ({ sponsorId }) => (
   <div className="sponsor-button">
-    <a
+    {/* <a
       className="bmc-button"
       target="_blank"
       rel="noopener noreferrer"
@@ -13,8 +13,8 @@ export const SponsorButton = ({ sponsorId }) => (
       <img
         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
         alt="Buy me a coffee"
-      />
-      <span>Buy me a coffee</span>
-    </a>
+      /> */}
+    {/* <span>Buy me a coffee</span> */}
+    {/* </a> */}
   </div>
 )

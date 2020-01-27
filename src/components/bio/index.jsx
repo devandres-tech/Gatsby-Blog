@@ -1,6 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
+import profile from '../../../content/assets/pic.jpeg'
+
 
 import './index.scss'
 
@@ -9,19 +11,20 @@ export const Bio = () => (
     query={bioQuery}
     render={data => {
       const { author, social, introduction } = data.site.siteMetadata
-      console.log("data", data.site)
+      console.log("data", data)
       return (
         <div className="bio">
           <div className="author">
             <div className="author-description">
-              <Image
+              <img src={profile} className="author-image" style={{ borderRadius: `100%` }} />
+              {/* <Image
                 className="author-image"
                 fixed={data.avatar.childImageSharp.fixed}
                 alt={author}
                 style={{
                   borderRadius: `100%`,
                 }}
-              />
+              /> */}
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
                 <Link to={'/about'} className="author-name-content">
