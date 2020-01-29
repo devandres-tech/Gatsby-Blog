@@ -44,4 +44,7 @@ Yes folks, the window object and the keyword 'this' are essentially the same thi
 
 <br >
  ## Main takeaway 
- The main point to takeaway is that before we write any code in javaScript we already have an object that's created, the window object. This is the javaScript engine working behind the scenes. When most people start to learn javaScript they don't pay attention to what's happening behind the scenes they are more concerned with syntax of the language (as it was the case with me). If you feel comfortable working with javaScript I recommend you start learning how javaScript works under the hood and for that my friends I recommend this course on Udemy: [JavaScript: Understanding the Weird Parts](https://www.udemy.com/understand-javascript/). See you guys next time and go hack something. Now!
+
+ The main point to takeaway is that before we write any code in javaScript we already have an object that's created, the window object. This is the javaScript engine working behind the scenes. When most people start to learn javaScript they don't pay attention to what's happening behind the scenes they are more concerned with syntax of the language (as it was the case with me). If you feel comfortable working with javaScript I recommend you start learning how javaScript works under the hood and for that my friends I recommend this course on Udemy [JavaScript Understanding the Weird Parts](https://www.udemy.com/understand-javascript/) See you guys next time and go hack something. Now!
+
+<!-- So you've finally managed to add all the finishing touches to your project and now you're eagerly wanting to show it off to the world. You can do so easily within minutes with [surge.sh](https://surge.sh/) right from the command line.  -->

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
 import * as Elements from '../components/elements'
 import { Layout } from '../layout'
@@ -26,11 +27,15 @@ export default ({ data, pageContext, location }) => {
   const metaData = data.site.siteMetadata
   const { title, comment, siteUrl, author, sponsor } = metaData
   const { disqusShortName, utterances } = comment
+  console.log('data in blog-post', data)
 
   return (
     <Layout location={location} title={title}>
+      <Link className="fas fa-chevron-left fa-2x" to={`/`}>
+      </Link>
       <Head title={post.frontmatter.title} description={post.excerpt} />
-      <PostTitle title={post.frontmatter.title} />
+      <PostTitle date={post.frontmatter.date} title={post.frontmatter.title} />
+      {/* <p>{post.frontmatter.date}</p> */}
       <PostContainer html={post.html} />
       <SocialShare title={post.frontmatter.title} author={author} />
       {!!sponsor.buyMeACoffeeId && (
@@ -70,7 +75,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 280)
+      excerpt
       html
       frontmatter {
         title

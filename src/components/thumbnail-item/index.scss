@@ -17,4 +17,17 @@
 
 .thumbnail.visible {
   opacity: 1;
+
+  &:hover {
+
+    h3 {
+      color: rgb(151, 122, 177);
+      transition: .1s color;
+    }
+
+  }
+}
+
+.post-date {
+  font-style: italic;
 }
